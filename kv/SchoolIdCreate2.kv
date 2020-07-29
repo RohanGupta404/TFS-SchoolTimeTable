@@ -1,0 +1,47 @@
+#: import utils kivy.utils
+
+<SchoolIdCreate2>:
+    FloatLayout:
+        canvas:
+            Color:
+                rgb: utils.get_color_from_hex("22EACA")
+            Rectangle:
+                size: self.size
+                pos: self.pos
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .7, "left": 1.4}
+            size_hint: 1, .08
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.7, 1
+                text: "How many sections does grade x has"
+                id: label_message
+                name: "label_message"
+            TextInput:
+                valign: 'bottom'
+                hint_text: "Enter a Numeric Value"
+                id: number_sections
+                name: "number_sections"
+            Label:
+                size_hint: 0.15, 1
+                text: ""
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .3, "left": 1.4}
+            size_hint: 1, .08
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.7, 1
+                text: ""
+            Button:
+                text: "Next"
+                id: the_button
+                name: "the_button"
+                on_release:
+                    app.School_id_create4()
+            Label:
+                size_hint: 0.15, 1
+                text: ""

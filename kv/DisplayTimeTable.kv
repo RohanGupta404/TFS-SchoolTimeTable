@@ -1,0 +1,401 @@
+#: import utils kivy.utils
+
+<DisplayTimeTable>:
+    FloatLayout:
+        canvas:
+            Color:
+                rgb: utils.get_color_from_hex("22EACA")
+            Rectangle:
+                size: self.size
+                pos: self.pos
+
+        GridLayout:
+            cols: 6
+            pos_hint: {"top": .95, "left": 1.4}
+            size_hint: 1, .08
+            GridLayout:
+                rows: 2
+                size_hint: 0.3, .7
+                ImageButton:
+                    source: "images_folder/backButton.png"
+                    on_release:
+                        app.change_screen("IndexScreen")
+                Label:
+                    size_hint: .5, 1
+                    text: ""
+            Label:
+                text: "Monday"
+                font_size: '20sp'
+            Label:
+                text: "Tuesday"
+                font_size: '20sp'
+            Label:
+                text: "Wednesday"
+                font_size: '20sp'
+            Label:
+                text: "Thursday"
+                font_size: '20sp'
+            Label:
+                text: "Friday"
+                font_size: '20sp'
+
+        GridLayout:
+            cols: 6
+            pos_hint: {"top": .85, "left": 1.4}
+            size_hint: 1, .05
+
+            Label:
+                id: p1
+                name: "p1"
+                size_hint: 0.6, 1
+                text: ""
+                color: 252, 126, 47, 1
+            Label:
+                id: mon1
+                name: "mon1"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: tue1
+                name: "tue1"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: wen1
+                name: "wen1"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: thr1
+                name: "thr1"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: fri1
+                name: "fri1"
+                text: ""
+                color: 235, 244, 244, 1
+
+        GridLayout:
+            cols: 6
+            pos_hint: {"top": .78, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                id: p2
+                name: "p2"
+                size_hint: 0.6, 1
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: mon2
+                name: "mon2"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: tue2
+                name: "tue2"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: wen2
+                name: "wen2"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: thr2
+                name: "thr2"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: fri2
+                name: "fri2"
+                text: ""
+                color: 235, 244, 244, 1
+
+        GridLayout:
+            cols: 6
+            pos_hint: {"top": .71, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                id: p3
+                name: "p3"
+                size_hint: 0.6, 1
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: mon3
+                name: "mon3"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: tue3
+                name: "tue3"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: wen3
+                name: "wen3"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: thr3
+                name: "thr3"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: fri3
+                name: "fri3"
+                text: ""
+                color: 235, 244, 244, 1
+
+        GridLayout:
+            cols: 6
+            pos_hint: {"top": .64, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                id: p4
+                name: "p4"
+                size_hint: 0.6, 1
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: mon4
+                name: "mon4"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: tue4
+                name: "tue4"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: wen4
+                name: "wen4"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: thr4
+                name: "thr4"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: fri4
+                name: "fri4"
+                text: ""
+                color: 235, 244, 244, 1
+
+        GridLayout:
+            cols: 6
+            pos_hint: {"top": .57, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                id: p5
+                name: "p5"
+                size_hint: 0.6, 1
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: mon5
+                name: "mon5"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: tue5
+                name: "tue5"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: wen5
+                name: "wen5"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: thr5
+                name: "thr5"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: fri5
+                name: "fri5"
+                text: ""
+                color: 235, 244, 244, 1
+
+        GridLayout:
+            cols: 6
+            pos_hint: {"top": .50, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                id: p6
+                name: "p6"
+                size_hint: 0.6, 1
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: mon6
+                name: "mon6"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: tue6
+                name: "tue6"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: wen6
+                name: "wen6"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: thr6
+                name: "thr6"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: fri6
+                name: "fri6"
+                text: ""
+                color: 235, 244, 244, 1
+
+        GridLayout:
+            cols: 6
+            pos_hint: {"top": .43, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                id: p7
+                name: "p7"
+                size_hint: 0.6, 1
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: mon7
+                name: "mon7"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: tue7
+                name: "tue7"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: wen7
+                name: "wen7"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: thr7
+                name: "thr7"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: fri7
+                name: "fri7"
+                text: ""
+                color: 235, 244, 244, 1
+
+        GridLayout:
+            cols: 6
+            pos_hint: {"top": .36, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                id: p8
+                name: "p8"
+                size_hint: 0.6, 1
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: mon8
+                name: "mon8"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: tue8
+                name: "tue8"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: wen8
+                name: "wen8"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: thr8
+                name: "thr8"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: fri8
+                name: "fri8"
+                text: ""
+                color: 235, 244, 244, 1
+
+        GridLayout:
+            cols: 6
+            pos_hint: {"top": .29, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                id: p9
+                name: "p9"
+                size_hint: 0.6, 1
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: mon9
+                name: "mon9"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: tue9
+                name: "tue9"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: wen9
+                name: "wen9"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: thr9
+                name: "thr9"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: fri9
+                name: "fri9"
+                text: ""
+                color: 235, 244, 244, 1
+
+        GridLayout:
+            cols: 6
+            pos_hint: {"top": .22, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                id: p10
+                name: "p10"
+                size_hint: 0.6, 1
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: mon10
+                name: "mon10"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: tue10
+                name: "tue10"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: wen10
+                name: "wen10"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: thr10
+                name: "thr10"
+                text: ""
+                color: 235, 244, 244, 1
+            Label:
+                id: fri10
+                name: "fr10"
+                text: ""
+                color: 235, 244, 244, 1

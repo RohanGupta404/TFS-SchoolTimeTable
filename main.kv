@@ -1,0 +1,37 @@
+#: include kv/HomeScreen.kv
+#: include kv/SchoolIdCreate.kv
+#: include kv/SchoolIdCreate2.kv
+#: include kv/SchoolIdCreate3.kv
+#: include kv/TeacherIdCheck.kv
+#: include kv/TeacherIdCreate.kv
+#: include kv/IndexScreen.kv
+#: include kv/DisplayTimeTable.kv
+
+GridLayout:
+    cols: 1
+    ScreenManager:
+        id: screen_manager
+        HomeScreen:
+            name: 'HomeScreen'
+            id: HomeScreen
+        SchoolIdCreate:
+            name: 'SchoolIdCreate'
+            id: SchoolIdCreate
+        TeacherIdCheck:
+            name: 'TeacherIdCheck'
+            id: TeacherIdCheck
+        TeacherIdCreate:
+            name: 'TeacherIdCreate'
+            id: TeacherIdCreate
+        SchoolIdCreate2:
+            name: 'SchoolIdCreate2'
+            id: SchoolIdCreate2
+        SchoolIdCreate3:
+            name: 'SchoolIdCreate3'
+            id: SchoolIdCreate3
+        IndexScreen:
+            name: 'IndexScreen'
+            id: IndexScreen
+        DisplayTimeTable:
+            name: 'DisplayTimeTable'
+            id: DisplayTimeTable

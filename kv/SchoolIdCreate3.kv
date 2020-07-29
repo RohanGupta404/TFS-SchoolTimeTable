@@ -1,0 +1,1927 @@
+#: import utils kivy.utils
+
+<SchoolIdCreate3>:
+    FloatLayout:
+        canvas:
+            Color:
+                rgb: utils.get_color_from_hex("22EACA")
+            Rectangle:
+                size: self.size
+                pos: self.pos
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .95, "left": 1.4}
+            size_hint: .4, .08
+            Label:
+                size_hint: 0.02, 1
+                text: ""
+            Label:
+                text: "XX"
+                color: 0, 0, 0, 1
+                name: "grade_name"
+                id: grade_name
+            Label:
+                size_hint: 1, 1
+                text: ""
+
+        GridLayout:
+            cols: 2
+            pos_hint: {"top": .8, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.5, 1
+                text: "Subject1"
+            DropDown:
+                auto_dismiss: False
+                pos_hint: {"top": 1, "left": 1}
+                size_hint: 1, 1
+                Button:
+                    name: 'NULL'
+                    id: 'NULL'
+                    text: "NULL"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('NULL')
+                Button:
+                    name: 'english'
+                    id: 'english'
+                    text: "English"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('english')
+                Button:
+                    name: 'hindi'
+                    id: 'hindi'
+                    text: "Hindi"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('hindi')
+                Button:
+                    name: 'mathematics'
+                    id: 'mathematics'
+                    text: "Mathematics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('mathematics')
+                Button:
+                    name: 'physics'
+                    id: 'physics'
+                    text: "Physics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('physics')
+                Button:
+                    name: 'biology'
+                    id: 'biology'
+                    text: "Biology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('biology')
+                Button:
+                    name: 'chemistry'
+                    id: 'chemistry'
+                    text: "Chemistry"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('chemistry')
+                Button:
+                    name: 'business_studies'
+                    id: 'business_studies'
+                    text: "Business Studies"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('business_studies')
+                Button:
+                    name: 'geography'
+                    id: 'Geography'
+                    text: "geography"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('geography')
+                Button:
+                    name: 'home_science'
+                    id: 'home_science'
+                    text: "Home Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('home_science')
+                Button:
+                    name: 'sociology'
+                    id: 'sociology'
+                    text: "Sociology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('sociology')
+                Button:
+                    name: 'computer_science'
+                    id: 'computer_science'
+                    text: "Computer Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('computer_science')
+                Button:
+                    name: 'information_practice'
+                    id: 'information_practice'
+                    text: "Information Practice"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('information_practice')
+                Button:
+                    name: 'bio_technology'
+                    id: 'bio_technology'
+                    text: "Bio Technology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('bio_technology')
+                Button:
+                    name: 'economics'
+                    id: 'economics'
+                    text: "Economics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('economics')
+                Button:
+                    name: 'political_science'
+                    id: 'political_science'
+                    text: "Political Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('political_science')
+                Button:
+                    name: 'history'
+                    id: 'history'
+                    text: "History"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('history')
+                Button:
+                    name: 'accountancy'
+                    id: 'accountancy'
+                    text: "Accountancy"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('accountancy')
+                Button:
+                    name: 'sanskrit'
+                    id: 'sanskrit'
+                    text: "Sanskrit"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('sanskrit')
+                Button:
+                    name: 'german'
+                    id: 'german'
+                    text: "German"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('german')
+                Button:
+                    name: 'french'
+                    id: 'french'
+                    text: "French"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('french')
+                Button:
+                    name: 'physical_education'
+                    id: 'physical_education'
+                    text: "Physical Education"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub1('physical_education')
+
+        GridLayout:
+            cols: 2
+            pos_hint: {"top": .74, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.5, 1
+                text: "Subject2"
+            DropDown:
+                auto_dismiss: False
+                pos_hint: {"top": 1, "left": 1}
+                size_hint: 1, 1
+                Button:
+                    name: 'NULL'
+                    id: 'NULL'
+                    text: "NULL"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('NULL')
+                Button:
+                    name: 'english'
+                    id: 'english'
+                    text: "English"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('english')
+                Button:
+                    name: 'hindi'
+                    id: 'hindi'
+                    text: "Hindi"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('hindi')
+                Button:
+                    name: 'mathematics'
+                    id: 'mathematics'
+                    text: "Mathematics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('mathematics')
+                Button:
+                    name: 'physics'
+                    id: 'physics'
+                    text: "Physics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('physics')
+                Button:
+                    name: 'biology'
+                    id: 'biology'
+                    text: "Biology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('biology')
+                Button:
+                    name: 'chemistry'
+                    id: 'chemistry'
+                    text: "Chemistry"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('chemistry')
+                Button:
+                    name: 'business_studies'
+                    id: 'business_studies'
+                    text: "Business Studies"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('business_studies')
+                Button:
+                    name: 'geography'
+                    id: 'Geography'
+                    text: "geography"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('geography')
+                Button:
+                    name: 'home_science'
+                    id: 'home_science'
+                    text: "Home Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('home_science')
+                Button:
+                    name: 'sociology'
+                    id: 'sociology'
+                    text: "Sociology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('sociology')
+                Button:
+                    name: 'computer_science'
+                    id: 'computer_science'
+                    text: "Computer Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('computer_science')
+                Button:
+                    name: 'information_practice'
+                    id: 'information_practice'
+                    text: "Information Practice"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('information_practice')
+                Button:
+                    name: 'bio_technology'
+                    id: 'bio_technology'
+                    text: "Bio Technology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('bio_technology')
+                Button:
+                    name: 'economics'
+                    id: 'economics'
+                    text: "Economics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('economics')
+                Button:
+                    name: 'political_science'
+                    id: 'political_science'
+                    text: "Political Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('political_science')
+                Button:
+                    name: 'history'
+                    id: 'history'
+                    text: "History"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('history')
+                Button:
+                    name: 'accountancy'
+                    id: 'accountancy'
+                    text: "Accountancy"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('accountancy')
+                Button:
+                    name: 'sanskrit'
+                    id: 'sanskrit'
+                    text: "Sanskrit"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('sanskrit')
+                Button:
+                    name: 'german'
+                    id: 'german'
+                    text: "German"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('german')
+                Button:
+                    name: 'french'
+                    id: 'french'
+                    text: "French"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('french')
+                Button:
+                    name: 'physical_education'
+                    id: 'physical_education'
+                    text: "Physical Education"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub2('physical_education')
+
+        GridLayout:
+            cols: 2
+            pos_hint: {"top": .68, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.5, 1
+                text: "Subject3"
+            DropDown:
+                auto_dismiss: False
+                size_hint: 1, 1
+                Button:
+                    name: 'NULL'
+                    id: 'NULL'
+                    text: "NULL"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('NULL')
+                Button:
+                    name: 'english'
+                    id: 'english'
+                    text: "English"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('english')
+                Button:
+                    name: 'hindi'
+                    id: 'hindi'
+                    text: "Hindi"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('hindi')
+                Button:
+                    name: 'mathematics'
+                    id: 'mathematics'
+                    text: "Mathematics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('mathematics')
+                Button:
+                    name: 'physics'
+                    id: 'physics'
+                    text: "Physics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('physics')
+                Button:
+                    name: 'biology'
+                    id: 'biology'
+                    text: "Biology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('biology')
+                Button:
+                    name: 'chemistry'
+                    id: 'chemistry'
+                    text: "Chemistry"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('chemistry')
+                Button:
+                    name: 'business_studies'
+                    id: 'business_studies'
+                    text: "Business Studies"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('business_studies')
+                Button:
+                    name: 'geography'
+                    id: 'Geography'
+                    text: "geography"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('geography')
+                Button:
+                    name: 'home_science'
+                    id: 'home_science'
+                    text: "Home Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('home_science')
+                Button:
+                    name: 'sociology'
+                    id: 'sociology'
+                    text: "Sociology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('sociology')
+                Button:
+                    name: 'computer_science'
+                    id: 'computer_science'
+                    text: "Computer Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('computer_science')
+                Button:
+                    name: 'information_practice'
+                    id: 'information_practice'
+                    text: "Information Practice"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('information_practice')
+                Button:
+                    name: 'bio_technology'
+                    id: 'bio_technology'
+                    text: "Bio Technology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('bio_technology')
+                Button:
+                    name: 'economics'
+                    id: 'economics'
+                    text: "Economics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('economics')
+                Button:
+                    name: 'political_science'
+                    id: 'political_science'
+                    text: "Political Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('political_science')
+                Button:
+                    name: 'history'
+                    id: 'history'
+                    text: "History"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('history')
+                Button:
+                    name: 'accountancy'
+                    id: 'accountancy'
+                    text: "Accountancy"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('accountancy')
+                Button:
+                    name: 'sanskrit'
+                    id: 'sanskrit'
+                    text: "Sanskrit"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('sanskrit')
+                Button:
+                    name: 'german'
+                    id: 'german'
+                    text: "German"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('german')
+                Button:
+                    name: 'french'
+                    id: 'french'
+                    text: "French"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('french')
+                Button:
+                    name: 'physical_education'
+                    id: 'physical_education'
+                    text: "Physical Education"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub3('physical_education')
+
+        GridLayout:
+            cols: 2
+            pos_hint: {"top": .62, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.5, 1
+                text: "Subject4"
+            DropDown:
+                auto_dismiss: False
+                size_hint: 1, 1
+                Button:
+                    name: 'NULL'
+                    id: 'NULL'
+                    text: "NULL"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('NULL')
+                Button:
+                    name: 'english'
+                    id: 'english'
+                    text: "English"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('english')
+                Button:
+                    name: 'hindi'
+                    id: 'hindi'
+                    text: "Hindi"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('hindi')
+                Button:
+                    name: 'mathematics'
+                    id: 'mathematics'
+                    text: "Mathematics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('mathematics')
+                Button:
+                    name: 'physics'
+                    id: 'physics'
+                    text: "Physics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('physics')
+                Button:
+                    name: 'biology'
+                    id: 'biology'
+                    text: "Biology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('biology')
+                Button:
+                    name: 'chemistry'
+                    id: 'chemistry'
+                    text: "Chemistry"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('chemistry')
+                Button:
+                    name: 'business_studies'
+                    id: 'business_studies'
+                    text: "Business Studies"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('business_studies')
+                Button:
+                    name: 'geography'
+                    id: 'Geography'
+                    text: "geography"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('geography')
+                Button:
+                    name: 'home_science'
+                    id: 'home_science'
+                    text: "Home Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('home_science')
+                Button:
+                    name: 'sociology'
+                    id: 'sociology'
+                    text: "Sociology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('sociology')
+                Button:
+                    name: 'computer_science'
+                    id: 'computer_science'
+                    text: "Computer Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('computer_science')
+                Button:
+                    name: 'information_practice'
+                    id: 'information_practice'
+                    text: "Information Practice"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('information_practice')
+                Button:
+                    name: 'bio_technology'
+                    id: 'bio_technology'
+                    text: "Bio Technology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('bio_technology')
+                Button:
+                    name: 'economics'
+                    id: 'economics'
+                    text: "Economics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('economics')
+                Button:
+                    name: 'political_science'
+                    id: 'political_science'
+                    text: "Political Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('political_science')
+                Button:
+                    name: 'history'
+                    id: 'history'
+                    text: "History"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('history')
+                Button:
+                    name: 'accountancy'
+                    id: 'accountancy'
+                    text: "Accountancy"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('accountancy')
+                Button:
+                    name: 'sanskrit'
+                    id: 'sanskrit'
+                    text: "Sanskrit"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('sanskrit')
+                Button:
+                    name: 'german'
+                    id: 'german'
+                    text: "German"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('german')
+                Button:
+                    name: 'french'
+                    id: 'french'
+                    text: "French"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('french')
+                Button:
+                    name: 'physical_education'
+                    id: 'physical_education'
+                    text: "Physical Education"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub4('physical_education')
+
+        GridLayout:
+            cols: 2
+            pos_hint: {"top": .56, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.5, 1
+                text: "Subject5"
+            DropDown:
+                auto_dismiss: False
+                size_hint: 1, 1
+                Button:
+                    name: 'NULL'
+                    id: 'NULL'
+                    text: "NULL"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('NULL')
+                Button:
+                    name: 'english'
+                    id: 'english'
+                    text: "English"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('english')
+                Button:
+                    name: 'hindi'
+                    id: 'hindi'
+                    text: "Hindi"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('hindi')
+                Button:
+                    name: 'mathematics'
+                    id: 'mathematics'
+                    text: "Mathematics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('mathematics')
+                Button:
+                    name: 'physics'
+                    id: 'physics'
+                    text: "Physics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('physics')
+                Button:
+                    name: 'biology'
+                    id: 'biology'
+                    text: "Biology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('biology')
+                Button:
+                    name: 'chemistry'
+                    id: 'chemistry'
+                    text: "Chemistry"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('chemistry')
+                Button:
+                    name: 'business_studies'
+                    id: 'business_studies'
+                    text: "Business Studies"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('business_studies')
+                Button:
+                    name: 'geography'
+                    id: 'Geography'
+                    text: "geography"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('geography')
+                Button:
+                    name: 'home_science'
+                    id: 'home_science'
+                    text: "Home Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('home_science')
+                Button:
+                    name: 'sociology'
+                    id: 'sociology'
+                    text: "Sociology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('sociology')
+                Button:
+                    name: 'computer_science'
+                    id: 'computer_science'
+                    text: "Computer Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('computer_science')
+                Button:
+                    name: 'information_practice'
+                    id: 'information_practice'
+                    text: "Information Practice"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('information_practice')
+                Button:
+                    name: 'bio_technology'
+                    id: 'bio_technology'
+                    text: "Bio Technology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('bio_technology')
+                Button:
+                    name: 'economics'
+                    id: 'economics'
+                    text: "Economics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('economics')
+                Button:
+                    name: 'political_science'
+                    id: 'political_science'
+                    text: "Political Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('political_science')
+                Button:
+                    name: 'history'
+                    id: 'history'
+                    text: "History"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('history')
+                Button:
+                    name: 'accountancy'
+                    id: 'accountancy'
+                    text: "Accountancy"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('accountancy')
+                Button:
+                    name: 'sanskrit'
+                    id: 'sanskrit'
+                    text: "Sanskrit"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('sanskrit')
+                Button:
+                    name: 'german'
+                    id: 'german'
+                    text: "German"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('german')
+                Button:
+                    name: 'french'
+                    id: 'french'
+                    text: "French"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('french')
+                Button:
+                    name: 'physical_education'
+                    id: 'physical_education'
+                    text: "Physical Education"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub5('physical_education')
+
+        GridLayout:
+            cols: 2
+            pos_hint: {"top": .50, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.5, 1
+                text: "Subject6"
+            DropDown:
+                auto_dismiss: False
+                size_hint: 1, 1
+                Button:
+                    name: 'NULL'
+                    id: 'NULL'
+                    text: "NULL"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('NULL')
+                Button:
+                    name: 'english'
+                    id: 'english'
+                    text: "English"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('english')
+                Button:
+                    name: 'hindi'
+                    id: 'hindi'
+                    text: "Hindi"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('hindi')
+                Button:
+                    name: 'mathematics'
+                    id: 'mathematics'
+                    text: "Mathematics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('mathematics')
+                Button:
+                    name: 'physics'
+                    id: 'physics'
+                    text: "Physics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('physics')
+                Button:
+                    name: 'biology'
+                    id: 'biology'
+                    text: "Biology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('biology')
+                Button:
+                    name: 'chemistry'
+                    id: 'chemistry'
+                    text: "Chemistry"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('chemistry')
+                Button:
+                    name: 'business_studies'
+                    id: 'business_studies'
+                    text: "Business Studies"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('business_studies')
+                Button:
+                    name: 'geography'
+                    id: 'Geography'
+                    text: "geography"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('geography')
+                Button:
+                    name: 'home_science'
+                    id: 'home_science'
+                    text: "Home Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('home_science')
+                Button:
+                    name: 'sociology'
+                    id: 'sociology'
+                    text: "Sociology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('sociology')
+                Button:
+                    name: 'computer_science'
+                    id: 'computer_science'
+                    text: "Computer Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('computer_science')
+                Button:
+                    name: 'information_practice'
+                    id: 'information_practice'
+                    text: "Information Practice"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('information_practice')
+                Button:
+                    name: 'bio_technology'
+                    id: 'bio_technology'
+                    text: "Bio Technology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('bio_technology')
+                Button:
+                    name: 'economics'
+                    id: 'economics'
+                    text: "Economics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('economics')
+                Button:
+                    name: 'political_science'
+                    id: 'political_science'
+                    text: "Political Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('political_science')
+                Button:
+                    name: 'history'
+                    id: 'history'
+                    text: "History"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('history')
+                Button:
+                    name: 'accountancy'
+                    id: 'accountancy'
+                    text: "Accountancy"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('accountancy')
+                Button:
+                    name: 'sanskrit'
+                    id: 'sanskrit'
+                    text: "Sanskrit"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('sanskrit')
+                Button:
+                    name: 'german'
+                    id: 'german'
+                    text: "German"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('german')
+                Button:
+                    name: 'french'
+                    id: 'french'
+                    text: "French"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('french')
+                Button:
+                    name: 'physical_education'
+                    id: 'physical_education'
+                    text: "Physical Education"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub6('physical_education')
+
+        GridLayout:
+            cols: 2
+            pos_hint: {"top": .44, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.5, 1
+                text: "Subject7"
+            DropDown:
+                auto_dismiss: False
+                size_hint: 1, 1
+                Button:
+                    name: 'NULL'
+                    id: 'NULL'
+                    text: "NULL"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('NULL')
+                Button:
+                    name: 'english'
+                    id: 'english'
+                    text: "English"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('english')
+                Button:
+                    name: 'hindi'
+                    id: 'hindi'
+                    text: "Hindi"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('hindi')
+                Button:
+                    name: 'mathematics'
+                    id: 'mathematics'
+                    text: "Mathematics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('mathematics')
+                Button:
+                    name: 'physics'
+                    id: 'physics'
+                    text: "Physics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('physics')
+                Button:
+                    name: 'biology'
+                    id: 'biology'
+                    text: "Biology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('biology')
+                Button:
+                    name: 'chemistry'
+                    id: 'chemistry'
+                    text: "Chemistry"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('chemistry')
+                Button:
+                    name: 'business_studies'
+                    id: 'business_studies'
+                    text: "Business Studies"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('business_studies')
+                Button:
+                    name: 'geography'
+                    id: 'Geography'
+                    text: "geography"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('geography')
+                Button:
+                    name: 'home_science'
+                    id: 'home_science'
+                    text: "Home Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('home_science')
+                Button:
+                    name: 'sociology'
+                    id: 'sociology'
+                    text: "Sociology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('sociology')
+                Button:
+                    name: 'computer_science'
+                    id: 'computer_science'
+                    text: "Computer Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('computer_science')
+                Button:
+                    name: 'information_practice'
+                    id: 'information_practice'
+                    text: "Information Practice"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('information_practice')
+                Button:
+                    name: 'bio_technology'
+                    id: 'bio_technology'
+                    text: "Bio Technology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('bio_technology')
+                Button:
+                    name: 'economics'
+                    id: 'economics'
+                    text: "Economics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('economics')
+                Button:
+                    name: 'political_science'
+                    id: 'political_science'
+                    text: "Political Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('political_science')
+                Button:
+                    name: 'history'
+                    id: 'history'
+                    text: "History"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('history')
+                Button:
+                    name: 'accountancy'
+                    id: 'accountancy'
+                    text: "Accountancy"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('accountancy')
+                Button:
+                    name: 'sanskrit'
+                    id: 'sanskrit'
+                    text: "Sanskrit"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('sanskrit')
+                Button:
+                    name: 'german'
+                    id: 'german'
+                    text: "German"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('german')
+                Button:
+                    name: 'french'
+                    id: 'french'
+                    text: "French"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('french')
+                Button:
+                    name: 'physical_education'
+                    id: 'physical_education'
+                    text: "Physical Education"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub7('physical_education')
+
+        GridLayout:
+            cols: 2
+            pos_hint: {"top": .38, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.5, 1
+                text: "Subject8"
+            DropDown:
+                auto_dismiss: False
+                pos_hint: {"top": 1, "left": 1}
+                size_hint: 1, 1
+                Button:
+                    name: 'NULL'
+                    id: 'NULL'
+                    text: "NULL"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('NULL')
+                Button:
+                    name: 'english'
+                    id: 'english'
+                    text: "English"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('english')
+                Button:
+                    name: 'hindi'
+                    id: 'hindi'
+                    text: "Hindi"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('hindi')
+                Button:
+                    name: 'mathematics'
+                    id: 'mathematics'
+                    text: "Mathematics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('mathematics')
+                Button:
+                    name: 'physics'
+                    id: 'physics'
+                    text: "Physics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('physics')
+                Button:
+                    name: 'biology'
+                    id: 'biology'
+                    text: "Biology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('biology')
+                Button:
+                    name: 'chemistry'
+                    id: 'chemistry'
+                    text: "Chemistry"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('chemistry')
+                Button:
+                    name: 'business_studies'
+                    id: 'business_studies'
+                    text: "Business Studies"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('business_studies')
+                Button:
+                    name: 'geography'
+                    id: 'Geography'
+                    text: "geography"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('geography')
+                Button:
+                    name: 'home_science'
+                    id: 'home_science'
+                    text: "Home Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('home_science')
+                Button:
+                    name: 'sociology'
+                    id: 'sociology'
+                    text: "Sociology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('sociology')
+                Button:
+                    name: 'computer_science'
+                    id: 'computer_science'
+                    text: "Computer Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('computer_science')
+                Button:
+                    name: 'information_practice'
+                    id: 'information_practice'
+                    text: "Information Practice"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('information_practice')
+                Button:
+                    name: 'bio_technology'
+                    id: 'bio_technology'
+                    text: "Bio Technology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('bio_technology')
+                Button:
+                    name: 'economics'
+                    id: 'economics'
+                    text: "Economics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('economics')
+                Button:
+                    name: 'political_science'
+                    id: 'political_science'
+                    text: "Political Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('political_science')
+                Button:
+                    name: 'history'
+                    id: 'history'
+                    text: "History"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('history')
+                Button:
+                    name: 'accountancy'
+                    id: 'accountancy'
+                    text: "Accountancy"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('accountancy')
+                Button:
+                    name: 'sanskrit'
+                    id: 'sanskrit'
+                    text: "Sanskrit"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('sanskrit')
+                Button:
+                    name: 'german'
+                    id: 'german'
+                    text: "German"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('german')
+                Button:
+                    name: 'french'
+                    id: 'french'
+                    text: "French"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('french')
+                Button:
+                    name: 'physical_education'
+                    id: 'physical_education'
+                    text: "Physical Education"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub8('physical_education')
+
+        GridLayout:
+            cols: 2
+            pos_hint: {"top": .32, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.5, 1
+                text: "Subject9"
+            DropDown:
+                auto_dismiss: False
+                pos_hint: {"top": 1, "left": 1}
+                size_hint: 1, 1
+                Button:
+                    name: 'NULL'
+                    id: 'NULL'
+                    text: "NULL"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('NULL')
+                Button:
+                    name: 'english'
+                    id: 'english'
+                    text: "English"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('english')
+                Button:
+                    name: 'hindi'
+                    id: 'hindi'
+                    text: "Hindi"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('hindi')
+                Button:
+                    name: 'mathematics'
+                    id: 'mathematics'
+                    text: "Mathematics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('mathematics')
+                Button:
+                    name: 'physics'
+                    id: 'physics'
+                    text: "Physics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('physics')
+                Button:
+                    name: 'biology'
+                    id: 'biology'
+                    text: "Biology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('biology')
+                Button:
+                    name: 'chemistry'
+                    id: 'chemistry'
+                    text: "Chemistry"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('chemistry')
+                Button:
+                    name: 'business_studies'
+                    id: 'business_studies'
+                    text: "Business Studies"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('business_studies')
+                Button:
+                    name: 'geography'
+                    id: 'Geography'
+                    text: "geography"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('geography')
+                Button:
+                    name: 'home_science'
+                    id: 'home_science'
+                    text: "Home Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('home_science')
+                Button:
+                    name: 'sociology'
+                    id: 'sociology'
+                    text: "Sociology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('sociology')
+                Button:
+                    name: 'computer_science'
+                    id: 'computer_science'
+                    text: "Computer Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('computer_science')
+                Button:
+                    name: 'information_practice'
+                    id: 'information_practice'
+                    text: "Information Practice"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('information_practice')
+                Button:
+                    name: 'bio_technology'
+                    id: 'bio_technology'
+                    text: "Bio Technology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('bio_technology')
+                Button:
+                    name: 'economics'
+                    id: 'economics'
+                    text: "Economics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('economics')
+                Button:
+                    name: 'political_science'
+                    id: 'political_science'
+                    text: "Political Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('political_science')
+                Button:
+                    name: 'history'
+                    id: 'history'
+                    text: "History"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('history')
+                Button:
+                    name: 'accountancy'
+                    id: 'accountancy'
+                    text: "Accountancy"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('accountancy')
+                Button:
+                    name: 'sanskrit'
+                    id: 'sanskrit'
+                    text: "Sanskrit"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('sanskrit')
+                Button:
+                    name: 'german'
+                    id: 'german'
+                    text: "German"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('german')
+                Button:
+                    name: 'french'
+                    id: 'french'
+                    text: "French"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('french')
+                Button:
+                    name: 'physical_education'
+                    id: 'physical_education'
+                    text: "Physical Education"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub9('physical_education')
+
+        GridLayout:
+            cols: 2
+            pos_hint: {"top": .26, "left": 1.4}
+            size_hint: 1, .05
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.5, 1
+                text: "Subject10"
+            DropDown:
+                auto_dismiss: False
+                pos_hint: {"top": 1, "left": 1}
+                size_hint: 1, 1
+                Button:
+                    name: 'NULL'
+                    id: 'NULL'
+                    text: "NULL"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('NULL')
+                Button:
+                    name: 'english'
+                    id: 'english'
+                    text: "English"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('english')
+                Button:
+                    name: 'hindi'
+                    id: 'hindi'
+                    text: "Hindi"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('hindi')
+                Button:
+                    name: 'mathematics'
+                    id: 'mathematics'
+                    text: "Mathematics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('mathematics')
+                Button:
+                    name: 'physics'
+                    id: 'physics'
+                    text: "Physics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('physics')
+                Button:
+                    name: 'biology'
+                    id: 'biology'
+                    text: "Biology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('biology')
+                Button:
+                    name: 'chemistry'
+                    id: 'chemistry'
+                    text: "Chemistry"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('chemistry')
+                Button:
+                    name: 'business_studies'
+                    id: 'business_studies'
+                    text: "Business Studies"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('business_studies')
+                Button:
+                    name: 'geography'
+                    id: 'Geography'
+                    text: "geography"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('geography')
+                Button:
+                    name: 'home_science'
+                    id: 'home_science'
+                    text: "Home Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('home_science')
+                Button:
+                    name: 'sociology'
+                    id: 'sociology'
+                    text: "Sociology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('sociology')
+                Button:
+                    name: 'computer_science'
+                    id: 'computer_science'
+                    text: "Computer Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('computer_science')
+                Button:
+                    name: 'information_practice'
+                    id: 'information_practice'
+                    text: "Information Practice"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('information_practice')
+                Button:
+                    name: 'bio_technology'
+                    id: 'bio_technology'
+                    text: "Bio Technology"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('bio_technology')
+                Button:
+                    name: 'economics'
+                    id: 'economics'
+                    text: "Economics"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('economics')
+                Button:
+                    name: 'political_science'
+                    id: 'political_science'
+                    text: "Political Science"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('political_science')
+                Button:
+                    name: 'history'
+                    id: 'history'
+                    text: "History"
+                    size_hint_y: None
+                    on_release:
+                        app.sub10('history')
+                Button:
+                    name: 'accountancy'
+                    id: 'accountancy'
+                    text: "Accountancy"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('accountancy')
+                Button:
+                    name: 'sanskrit'
+                    id: 'sanskrit'
+                    text: "Sanskrit"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('sanskrit')
+                Button:
+                    name: 'german'
+                    id: 'german'
+                    text: "German"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('german')
+                Button:
+                    name: 'french'
+                    id: 'french'
+                    text: "French"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('french')
+                Button:
+                    name: 'physical_education'
+                    id: 'physical_education'
+                    text: "Physical Education"
+                    size_hint_y: None
+                    height: 30
+                    on_release:
+                        app.sub10('physical_education')
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .1, "left": 1.4}
+            size_hint: 1, .07
+            Label:
+                size_hint: 0.7, 1
+                text: ""
+            Button:
+                id: submit
+                name: "submit"
+                text: "Submit"
+                on_release:
+                    app.subject_assigning()
+            Label:
+                size_hint: 0.1, 1
+                text: ""

@@ -1,0 +1,96 @@
+#: import utils kivy.utils
+
+<HomeScreen>:
+    FloatLayout:
+
+        canvas:
+            Color:
+                rgb: utils.get_color_from_hex("22EACA")
+            Rectangle:
+                size: self.size
+                pos: self.pos
+
+        GridLayout:
+            canvas:
+                Color:
+                    rgb: utils.get_color_from_hex("FF9E74")
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            cols: 3
+            pos_hint: {"top": 1, "left": 1.4}
+            size_hint: 1, .25
+            Label:
+                size_hint: 0.3, 1
+                text: ""
+            Label:
+                text: "Time For School"
+                font_size: '30sp'
+                font: 'Arial'
+            Label:
+                size_hint: 0.3, 1
+                text: ""
+
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .7, "left": 1.4}
+            size_hint: 1, .1
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+            TextInput:
+                valign: 'bottom'
+                hint_text: "School Id"
+                id: school_id
+                name: "school_id"
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .58, "left": 1.4}
+            size_hint: 1, .1
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+            TextInput:
+                valign: 'bottom'
+                hint_text: "Password"
+                id: school_pa
+                name: "school_pa"
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .42, "left": 1.4}
+            size_hint: 1, .1
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+            Button:
+                text: "login"
+                on_release:
+                    app.check_school_id()
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .28, "left": 1.4}
+            size_hint: 1, .1
+            Label:
+                size_hint: 1, 1
+                color: 0, 0, 0, 1
+                text: "Does not have account"
+            Button:
+                size_hint: 0.5, 1
+                text: "Sign in"
+                on_release:
+                    app.change_screen('SchoolIdCreate')
+            Label:
+                size_hint: 0.2, 1
+                text: ""

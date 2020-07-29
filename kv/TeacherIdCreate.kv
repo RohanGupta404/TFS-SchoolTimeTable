@@ -1,0 +1,403 @@
+#: import utils kivy.utils
+
+<teacherIdCreate>:
+    FloatLayout:
+        canvas:
+            Color:
+                rgb: utils.get_color_from_hex("22EACA")
+            Rectangle:
+                size: self.size
+                pos: self.pos
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .9, "left": 1.4}
+            size_hint: 1, .08
+            GridLayout:
+                rows: 2
+                size_hint: 0.1, 1
+                ImageButton:
+                    source: "images_folder/backButton.png"
+                    on_release:
+                        app.change_screen("TeacherIdCheck")
+                Label:
+                    size_hint: .5, 1
+                    text: ""
+            TextInput:
+                valign: 'bottom'
+                hint_text: "teacher id"
+                id: teacher_id
+                name: "teacher_id"
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .8, "left": 1.4}
+            size_hint: 1, .08
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+            TextInput:
+                valign: 'bottom'
+                hint_text: "password"
+                id: teacher_pa
+                name: "teacher_pa"
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .65, "left": 1.4}
+            size_hint: 1, .16
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.5, 1
+                text: "Subject"
+            DropDown:
+                auto_dismiss: False
+                size_hint: 1, 1
+                Button:
+                    name: 'english'
+                    id: 'english'
+                    text: "English"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('english')
+                Button:
+                    name: 'hindi'
+                    id: 'hindi'
+                    text: "Hindi"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('hindi')
+                Button:
+                    name: 'mathematics'
+                    id: 'mathematics'
+                    text: "Mathematics"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('mathematics')
+                Button:
+                    name: 'physics'
+                    id: 'physics'
+                    text: "Physics"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('physics')
+                Button:
+                    name: 'biology'
+                    id: 'biology'
+                    text: "Biology"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('biology')
+                Button:
+                    name: 'chemistry'
+                    id: 'chemistry'
+                    text: "Chemistry"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('chemistry')
+                Button:
+                    name: 'business_studies'
+                    id: 'business_studies'
+                    text: "Business Studies"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('business_studies')
+                Button:
+                    name: 'geography'
+                    id: 'Geography'
+                    text: "geography"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('geography')
+                Button:
+                    name: 'home_science'
+                    id: 'home_science'
+                    text: "Home Science"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('home_science')
+                Button:
+                    name: 'sociology'
+                    id: 'sociology'
+                    text: "Sociology"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('sociology')
+                Button:
+                    name: 'computer_science'
+                    id: 'computer_science'
+                    text: "Computer Science"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('computer_science')
+                Button:
+                    name: 'information_practice'
+                    id: 'information_practice'
+                    text: "Information Practice"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('information_practice')
+                Button:
+                    name: 'bio_technology'
+                    id: 'bio_technology'
+                    text: "Bio Technology"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('bio_technology')
+                Button:
+                    name: 'economics'
+                    id: 'economics'
+                    text: "Economics"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('economics')
+                Button:
+                    name: 'political_science'
+                    id: 'political_science'
+                    text: "Political Science"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('political_science')
+                Button:
+                    name: 'history'
+                    id: 'history'
+                    text: "History"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('history')
+                Button:
+                    name: 'accountancy'
+                    id: 'accountancy'
+                    text: "Accountancy"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('accountancy')
+                Button:
+                    name: 'sanskrit'
+                    id: 'sanskrit'
+                    text: "Sanskrit"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('sanskrit')
+                Button:
+                    name: 'german'
+                    id: 'german'
+                    text: "German"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('german')
+                Button:
+                    name: 'french'
+                    id: 'french'
+                    text: "French"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('french')
+                Button:
+                    name: 'physical_education'
+                    id: 'physical_education'
+                    text: "Physical Education"
+                    size_hint_y: None
+                    height: 48
+                    on_release:
+                        app.subject_of_teacher('physical_education')
+
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .46, "left": 1.4}
+            size_hint: 1, .1
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.5, 1
+                text: "Type of Teacher"
+            GridLayout:
+                cols: 2
+                Button:
+                    name: 'teacher'
+                    id: 'teacher'
+                    text: "Teacher"
+                    on_release:
+                        app.type_of_teacher('teacher')
+                Button:
+                    name: 'administrator'
+                    id: 'administrator'
+                    text: "Administrator"
+                    on_release:
+                        app.type_of_teacher('administrator')
+
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .34, "left": 1.4}
+            size_hint: 1, .1
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.5, 1
+                text: "Grade"
+            GridLayout:
+                cols: 6
+                Button:
+                    text: "I"
+                    on_release:
+                        app.grade_of_teacher(1)
+                Button:
+                    text: "II"
+                    on_release:
+                        app.grade_of_teacher(2)
+                Button:
+                    text: "III"
+                    on_release:
+                        app.grade_of_teacher(3)
+                Button:
+                    text: "IV"
+                    on_release:
+                        app.grade_of_teacher(4)
+                Button:
+                    text: "V"
+                    on_release:
+                        app.grade_of_teacher(5)
+                Button:
+                    text: "VI"
+                    on_release:
+                        app.grade_of_teacher(6)
+                Button:
+                    text: "VII"
+                    on_release:
+                        app.grade_of_teacher(7)
+                Button:
+                    text: "VIII"
+                    on_release:
+                        app.grade_of_teacher(8)
+                Button:
+                    text: "IX"
+                    on_release:
+                        app.grade_of_teacher(9)
+                Button:
+                    text: "X"
+                    on_release:
+                        app.grade_of_teacher(10)
+                Button:
+                    text: "XI"
+                    on_release:
+                        app.grade_of_teacher(11)
+                Button:
+                    text: "XII"
+                    on_release:
+                        app.grade_of_teacher(12)
+
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .22, "left": 1.4}
+            size_hint: 1, .1
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.5, 1
+                text: "Grade"
+            GridLayout:
+                cols: 6
+                Button:
+                    text: "I"
+                    on_release:
+                        app.grade_of_teacher2(1)
+                Button:
+                    text: "II"
+                    on_release:
+                        app.grade_of_teacher2(2)
+                Button:
+                    text: "III"
+                    on_release:
+                        app.grade_of_teacher2(3)
+                Button:
+                    text: "IV"
+                    on_release:
+                        app.grade_of_teacher2(4)
+                Button:
+                    text: "V"
+                    on_release:
+                        app.grade_of_teacher2(5)
+                Button:
+                    text: "VI"
+                    on_release:
+                        app.grade_of_teacher2(6)
+                Button:
+                    text: "VII"
+                    on_release:
+                        app.grade_of_teacher2(7)
+                Button:
+                    text: "VIII"
+                    on_release:
+                        app.grade_of_teacher2(8)
+                Button:
+                    text: "IX"
+                    on_release:
+                        app.grade_of_teacher2(9)
+                Button:
+                    text: "X"
+                    on_release:
+                        app.grade_of_teacher2(10)
+                Button:
+                    text: "XI"
+                    on_release:
+                        app.grade_of_teacher2(11)
+                Button:
+                    text: "XII"
+                    on_release:
+                        app.grade_of_teacher2(12)
+
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .1, "left": 1.4}
+            size_hint: 1, .08
+            Label:
+                size_hint: 0.7, 1
+                text: ""
+            Button:
+                id: submit
+                name: "submit"
+                text: "Submit"
+                on_release:
+                    app.teacher_id_create()
+            Label:
+                size_hint: 0.1, 1
+                text: ""

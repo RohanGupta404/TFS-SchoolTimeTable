@@ -1,0 +1,208 @@
+#: import utils kivy.utils
+
+<SchoolIdCreate>:
+    FloatLayout:
+        canvas:
+            Color:
+                rgb: utils.get_color_from_hex("22EACA")
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .9, "left": 1.4}
+            size_hint: 1, .08
+            GridLayout:
+                rows: 2
+                size_hint: 0.1, 1
+                ImageButton:
+                    source: "images_folder/backButton.png"
+                    on_release:
+                        app.change_screen("HomeScreen")
+                Label:
+                    size_hint: .5, 1
+                    text: ""
+            TextInput:
+                valign: 'bottom'
+                hint_text: "School id"
+                id: school_id
+                name: "school_id"
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .8, "left": 1.4}
+            size_hint: 1, .08
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+            TextInput:
+                valign: 'bottom'
+                hint_text: "Password"
+                id: school_pa
+                name: "school_pa"
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .7, "left": 1.4}
+            size_hint: 1, .08
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.7, 1
+                text: "Periods in average school day"
+            TextInput:
+                valign: 'bottom'
+                hint_text: "Enter a Numeric Value"
+                id: school_periods_day
+                name: "school_periods_day"
+            Label:
+                size_hint: 0.15, 1
+                text: ""
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .58, "left": 1.4}
+            size_hint: 1, .1
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.5, 1
+                text: "Lowest Grade"
+            GridLayout:
+                cols: 6
+                Button:
+                    text: "I"
+                    on_release:
+                        app.lower_grade(1)
+                Button:
+                    text: "II"
+                    on_release:
+                        app.lower_grade(2)
+                Button:
+                    text: "III"
+                    on_release:
+                        app.lower_grade(3)
+                Button:
+                    text: "IV"
+                    on_release:
+                        app.lower_grade(4)
+                Button:
+                    text: "V"
+                    on_release:
+                        app.lower_grade(5)
+                Button:
+                    text: "VI"
+                    on_release:
+                        app.lower_grade(6)
+                Button:
+                    text: "VII"
+                    on_release:
+                        app.lower_grade(7)
+                Button:
+                    text: "VIII"
+                    on_release:
+                        app.lower_grade(8)
+                Button:
+                    text: "IX"
+                    on_release:
+                        app.lower_grade(9)
+                Button:
+                    text: "X"
+                    on_release:
+                        app.lower_grade(10)
+                Button:
+                    text: "XI"
+                    on_release:
+                        app.lower_grade(11)
+                Button:
+                    text: "XII"
+                    on_release:
+                        app.lower_grade(12)
+
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .45, "left": 1.4}
+            size_hint: 1, .1
+            Label:
+                color: 0, 0, 0, 1
+                size_hint: 0.5, 1
+                text: "Highest Grade"
+            GridLayout:
+                cols: 6
+                Button:
+                    text: "I"
+                    on_release:
+                        app.upper_grade(1)
+                Button:
+                    text: "II"
+                    on_release:
+                        app.upper_grade(2)
+                Button:
+                    text: "III"
+                    on_release:
+                        app.upper_grade(3)
+                Button:
+                    text: "IV"
+                    on_release:
+                        app.upper_grade(4)
+                Button:
+                    text: "V"
+                    on_release:
+                        app.upper_grade(5)
+                Button:
+                    text: "VI"
+                    on_release:
+                        app.upper_grade(6)
+                Button:
+                    text: "VII"
+                    on_release:
+                        app.upper_grade(7)
+                Button:
+                    text: "VIII"
+                    on_release:
+                        app.upper_grade(8)
+                Button:
+                    text: "IX"
+                    on_release:
+                        app.upper_grade(9)
+                Button:
+                    text: "X"
+                    on_release:
+                        app.upper_grade(10)
+                Button:
+                    text: "XI"
+                    on_release:
+                        app.upper_grade(11)
+                Button:
+                    text: "XII"
+                    on_release:
+                        app.upper_grade(12)
+
+            Label:
+                size_hint: 0.1, 1
+                text: ""
+
+        GridLayout:
+            cols: 3
+            pos_hint: {"top": .25, "left": 1.4}
+            size_hint: 1, .1
+            Label:
+                size_hint: 1.4, 1
+                text: ""
+            Button:
+                id: submit
+                name: "submit"
+                text: "Next"
+                on_release:
+                    app.School_id_create()
+            Label:
+                size_hint: 0.4, 1
+                text: ""
